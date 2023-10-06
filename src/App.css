@@ -2,37 +2,49 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.entercode {
+  color: white;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.whitebox {
+  width: 380px;
+  height: 510px;
+  background-color: white;
+  position: relative;
+  margin: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.bingo-card {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container {
+  top: 10px; 
+  left: 0; 
+  right: 0; 
+  display: flex;
+  justify-content: center; 
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bingo-header {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px; /* Add margin between columns */
+}
+
+.number-container {
+  font-size: 50px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.number-container.clicked {
+  /*background-color: rgb(2, 46, 111); /* Change the background color when clicked */
+  background-color: red;
+  color: white; /* Change the text color when clicked */
 }
